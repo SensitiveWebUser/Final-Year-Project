@@ -10,7 +10,15 @@
   <version>1.0-SNAPSHOT</version>
 
   <modules>
-    <module>customer</module>
+    <module>employees</module>
+    <module>teams</module>
+    <module>companies</module>
+    <module>authentication</module>
+    <module>benefits</module>
+    <module>records</module>
+    <module>timeoff</module>
+    <module>timetable</module>
+    <module>amqp</module>
   </modules>
 
   <name>backend</name>

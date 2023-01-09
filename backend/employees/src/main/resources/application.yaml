@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: employees
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/customer
+    username: postgres
+  profiles:
+    active: default
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+rabbitmq:
+  exchanges:
+    internal: internal.exchange
+  queues:
+    employees: employees.queue
+  routing-keys:
+    internal-employees: internal.employees.routing-key
